@@ -104,7 +104,7 @@ sanddrop <- function(currentmap) {
     } else if (sandstatus == "stopped") {
  
       if (sandy == 0 & sandx == 500) {
-        stop(paste0("source blocked after ",sandcount)) #this wasn't triggering properly...
+        stop(paste0("source blocked after ",sandcount)) #this wasn't triggering properly... ah prolly because the while loop terminates first
       }
       #
     } else if (sandstatus == "gone") {
